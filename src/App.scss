@@ -1,0 +1,674 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Belleza", sans-serif;
+}
+
+$yellow: #ffe800;
+$brown: #404040;
+$blue: #000080;
+$angle: 8px;
+$angle-o: 4px;
+$red: #ff0000;
+
+/* HEADER */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: underline;
+    padding: 1vh 4vw;
+    font-family: "Belleza", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(15px + 1vh);
+    color: $blue;
+}
+
+#heading-topic {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#heading-logo {
+    position: relative;
+    padding-right: 0px;
+    transform: translateX(-50%);
+}
+
+#header-hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 0.25vh solid $blue;
+}
+
+.header-mainDiv {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.header-images {
+    display: inline-block;
+    animation: slide 20s linear infinite;
+    overflow: hidden;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.header-images2 {
+    display: inline-block;
+    animation: slide2 20s linear infinite;
+    animation-delay: 10s;
+    overflow: hidden;
+}
+@keyframes slide2 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.header-images img,
+.header-images2 img {
+    padding: 1vh 2vw;
+    height: "15vh";
+    width: "10vw";
+}
+
+/* MAIN */
+.main-wrapper {
+    display: flex;
+    height: 61vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-navigator {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button1,
+.button2,
+.button2-link,
+.button1-link {
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    border: none;
+    color: $red;
+    font-family: "Belleza", sans-serif;
+    font-size: calc(15px + 0.75vw);
+}
+.button1 {
+    margin-left: -13vw;
+    padding-right: 13vw;
+}
+
+.button2 {
+    margin-right: -13vw;
+}
+
+/* HomePage */
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 35vh;
+    position: relative;
+    top: 3vh;
+    left: 2vw;
+    background-color: $red;
+    box-shadow: -3vw -5vh $blue, 0 1px 0 $red, 0 2px 0 $red, 0 3px 0 $red,
+        0 4px 0 $red, 0 5px 0 $red, 0 6px 1px rgba(0, 0, 0, 0.1),
+        0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+        0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.homepage-container h1 {
+    font-family: "Belleza", sans-serif;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+        0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+        0 20px 20px rgba(0, 0, 0, 0.15);
+    font-size: calc(15px + 6vw);
+    text-align: center;
+}
+
+/* login */
+.main-wrapper {
+    display: flex;
+    height: 61vh;
+    width: 100vw;
+}
+
+.login-container {
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    height: 45vh;
+    position: relative;
+    top: 2vh;
+    background-color: $blue;
+    border-radius: 7px;
+}
+
+.login-heading {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    align-items: center;
+}
+
+.login-heading h1 {
+    font-family: "Belleza", sans-serif;
+    display: block;
+    text-decoration: wavy;
+    color: $red;
+    padding-top: 2vh;
+    font-size: calc(18px + 1.9vw);
+    /* text-align: center;
+    align-items: center; */
+}
+
+.login-heading img {
+    display: block;
+    width: calc(18px + 1.9vw);
+    /* text-align: center;
+    align-items: center; */
+}
+
+.login-details {
+    display: flex;
+    flex: 60% 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: normal;
+    align-items: center;
+}
+
+.login-form p {
+    color: $red;
+    font-size: 1.75vw;
+    padding-top: 3vh;
+}
+
+.login-form p input {
+    width: 70%;
+    height: 1.5em;
+}
+
+.login-form button {
+    font-family: "Belleza", sans-serif;
+    background-color: #e7886a;
+    border: none;
+    color: $blue;
+    padding: 4vh 5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    margin-top: 4.5vh;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/* products */
+.main-wrapper2 {
+    // display: flex;
+    height: 61vh;
+    width: 100vw;
+}
+
+.main-products-wrapper {
+    display: flex;
+    height: 52vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-container {
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 30vh;
+    position: relative;
+    top: -5vh;
+    background-color: $blue;
+    border-radius: 7px;
+}
+
+.products-heading {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    align-items: center;
+}
+
+.products-heading h1 {
+    font-family: "Belleza", sans-serif;
+    display: block;
+    text-decoration: wavy;
+    color: $red;
+    font-size: calc(18px + 1.9vw);
+    /* text-align: center;
+    align-items: center; */
+}
+
+.products-form p {
+    position: relative;
+    top: -1vh;
+    color: $red;
+    font-size: 1.75vw;
+    padding-top: 1.5vh;
+}
+
+.products-form p input {
+    width: 70%;
+    height: 1.5em;
+}
+
+.products-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.products-buttons-out {
+    position: relative;
+    top: -7vh;
+}
+
+.product-navigator {
+    position: fixed;
+    top: 86vh;
+}
+
+.products-buttons button {
+    font-family: "Belleza", sans-serif;
+    background-color: #e7886a;
+    border: none;
+    color: $blue;
+    text-align: center;
+    font-size: calc(14px + 0.75vh);
+    padding: 1.75vh 3.5vw;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2vh;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1vh;
+}
+
+.products-buttons-out .products-buttons button {
+    font-family: "Belleza", sans-serif;
+    background-color: #e7886a;
+    border: none;
+    color: $blue;
+    padding: 4vh 5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    margin-top: 4.5vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Add Products */
+
+.add-products-container {
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 45vh;
+    position: relative;
+    top: -5vh;
+    background-color: $blue;
+    border-radius: 7px;
+}
+
+.add-products-form p {
+    color: $red;
+    font-size: 1.75vw;
+    padding-top: 2.25vh;
+}
+
+.add-products-form p input {
+    width: 65%;
+    height: 1.5em;
+}
+
+.add-products-form button {
+    font-family: "Belleza", sans-serif;
+    background-color: #e7886a;
+    border: none;
+    color: $blue;
+    padding: 3vh 4vw;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    top: 75vh;
+    border-radius: 20px;
+    cursor: pointer;
+    position: fixed;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.add-products-button {
+    font-family: "Belleza", sans-serif;
+    background-color: #e7886a;
+    border: none;
+    font-size: 1.75vw;
+    color: $blue;
+    padding: 3vh 4vw !important;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: -2vh !important;
+    border-radius: 20px !important;
+    cursor: pointer;
+}
+// Cashier
+
+.main-cashier-wrapper {
+    display: flex;
+    height: 13vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.cashier-container {
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 8vh;
+    position: relative;
+    background-color: $blue;
+    border-radius: 7px;
+}
+.cashier-form p {
+    font-size: 3.75vh;
+    margin-top: 1vh;
+}
+
+.cashier-form input {
+    width: 70% !important;
+    position: relative;
+    top: -0.5vh;
+}
+
+#cashier button {
+    background-color: $blue;
+    text-decoration: none;
+    border: none;
+    color: $red;
+    border-radius: 15%;
+    font-family: "Belleza", sans-serif;
+    font-size: calc(15px + 0.75vw);
+    margin-left: 4vw;
+}
+#cashier button img {
+    position: relative;
+    top: 0.75vh;
+    margin-top: 0vh;
+}
+
+.main-wrapper2 p {
+    color: $red;
+    font-size: 1.75vw;
+}
+
+// Login Selection
+
+.login-selection-img {
+    padding-top: 3vh;
+}
+
+
+
+.login-selection-p-1 {
+    margin-top: -3vh !important;
+    font-size: 2.25vw !important;
+}
+
+.login-selection-p {
+    margin-top: -1vh !important;
+    padding: 0vh !important;
+    font-size: 2.25vw !important;
+}
+
+.login-form .login-selection-div {
+    margin-left: 40vh;
+}
+
+.login-selection-span {
+    content: "\2022";
+    font-size: calc(30px + 5vh);
+    color: #e7886a;
+    position: relative;
+    top: 1vh;
+}
+
+// Billing Recipt
+
+.main-billing-recipt-wrapper {
+    display: flex;
+    height: 16vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.5vh !important;
+}
+
+.billing-recipt-container {
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 8vh;
+    position: relative;
+    background-color: #e7886a;
+    border-radius: 7px;
+}
+
+#billing-recipt button {
+    background-color: #e7886a;
+    text-decoration: none;
+    border: none;
+    color: $red;
+    border-radius: 15%;
+
+    margin-top: -1vh;
+    font-family: "Belleza", sans-serif;
+    font-size: calc(15px + 0.75vw);
+    margin-left: 4vw;
+}
+#billing-recipt button img {
+    position: relative;
+    top: 0.75vh;
+}
+.billing-recipt-form p {
+    font-size: 3.75vh;
+    margin-top: 1vh;
+}
+.billing-recipt-form input {
+    width: 25% !important;
+    position: relative;
+    top: -0.5vh;
+}
+
+// Management
+
+.login-form .management-div {
+    margin-left: 35vh;
+}
+
+// View Product
+
+.view-products-container {
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 45vh;
+    position: relative;
+    top: -5vh;
+    background-color: $blue;
+    border-radius: 7px;
+}
+
+.view-products-form p {
+    color: $red;
+    font-size: 1.75vw;
+    padding-top: 3.75vh;
+}
+
+.view-products-form p input {
+    width: 65%;
+    height: 1.5em;
+}
+
+.view-products-form button {
+    font-family: "Belleza", sans-serif;
+    background-color: #e7886a;
+    border: none;
+    color: $blue;
+    padding: 3vh 4vw;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4vh;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+// View Employee
+
+.view-employee-container {
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 50vh;
+    position: relative;
+    // top: -7vh;
+    background-color: $blue;
+    border-radius: 7px;
+}
+
+.view-employee-form p {
+    color: $red;
+    font-size: 1.75vw;
+    padding-top: 3.25vh;
+}
+
+.view-employee-form p input {
+    width: 65%;
+    height: 1.5em;
+}
+
+.view-employee-form button {
+    font-family: "Belleza", sans-serif;
+    background-color: #e7886a;
+    border: none;
+    color: $blue; 
+    padding: 3vh 4vw;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4vh;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+/* FOOTER */
+footer p {
+    color: white;
+    text-align: center;
+    opacity: 0.7;
+    font-size: calc(18px + 0.75vh);
+    letter-spacing: 1px;
+}
+
+/* Miss */
+.special button {
+    top: 77vh
+}
+
+.add-employee-container {
+    top: -3vh
+}
+
+.special-employee {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top:76vh
+}
+.mystyle {
+    visibility: hidden;
+    position: fixed;
+}
+
+td, th {
+  border: 3px solid black;
+  padding: 5px 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+th{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+tr:hover {
+    background-color: black;
+    color: red;
+}
